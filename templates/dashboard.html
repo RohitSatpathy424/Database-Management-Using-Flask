@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome, {{ username }}!</h1>
+    <nav>
+        <a href="{{ url_for('profile') }}">Update Profile</a> | 
+        <a href="{{ url_for('reset_password') }}">Reset Password</a> | 
+        <a href="{{ url_for('grades') }}">View Grades</a> | 
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </nav>
+</body>
+</html>

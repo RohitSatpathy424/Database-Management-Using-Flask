@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Grades</title>
+</head>
+<body>
+    <h1>Your Grades</h1>
+
+    <table border="1">
+        <tr>
+            <th>Subject</th>
+            <th>Grade</th>
+        </tr>
+        {% for grade in grades %}
+        <tr>
+            <td>{{ grade.subject }}</td>
+            <td>{{ grade.grade }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href="{{ url_for('dashboard') }}">Back to Dashboard</a>
+</body>
+</html>
